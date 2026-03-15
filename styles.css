@@ -1,220 +1,50 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-color:#333;
-background: linear-gradient(135deg,#eef2f7,#d9e4f5);
-}
+/* Fonts */
+body { font-family: 'Roboto', sans-serif; margin:0; color:#333; background: linear-gradient(135deg,#eef2f7,#d9e4f5); }
+h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
+header { background: linear-gradient(135deg,#1f3c5c,#355f8a); color:white; text-align:center; padding:50px 20px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+nav{ margin-top:15px; }
+nav a{ color:white; margin:0 10px; text-decoration:none; font-weight:bold; transition:0.3s; }
+nav a:hover{ opacity:0.7; }
+section{ padding:60px 10%; background:white; margin:30px auto; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+h2{ color:#1f3c5c; margin-bottom:20px; }
+.button{ background:#1f3c5c; color:white; padding:12px 20px; border:none; border-radius:6px; text-decoration:none; cursor:pointer; display:inline-block; margin-top:10px; transition:0.3s; }
+.button:hover{ background:#355f8a; }
 
-header{
-background: linear-gradient(135deg,#1f3c5c,#355f8a);
-color:white;
-text-align:center;
-padding:50px 20px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-nav a:hover{
-opacity:0.7;
-}
-
-section{
-padding:60px 15%;
-background:white;
-margin:30px auto;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#1f3c5c;
-margin-bottom:20px;
-}
-
-.button{
-background:#1f3c5c;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-text-decoration:none;
-cursor:pointer;
-display:inline-block;
-margin-top:10px;
-transition:0.3s;
-}
-
-.button:hover{
-background:#355f8a;
-}
-
-/* About Section */
-.about-container{
-display:flex;
-align-items:center;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.profile-pic{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #1f3c5c;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.about-text{
-flex:1;
-}
+/* About */
+.about-container{ display:flex; align-items:center; gap:30px; flex-wrap:wrap; }
+.profile-pic{ width:180px; height:180px; border-radius:50%; object-fit:cover; border:5px solid #1f3c5c; box-shadow:0 5px 15px rgba(0,0,0,0.2); }
+.about-text{ flex:1; }
 
 /* Cards */
-.card{
-background:#f7f9fc;
-padding:20px;
-border-radius:8px;
-margin-top:20px;
-box-shadow:0 3px 8px rgba(0,0,0,0.08);
-}
+.card{ background:#f7f9fc; padding:20px; border-radius:8px; margin-top:20px; box-shadow:0 3px 8px rgba(0,0,0,0.08); }
 
 /* Footer */
-footer{
-text-align:center;
-background:#1f3c5c;
-color:white;
-padding:20px;
-margin-top:40px;
-}
+footer{ text-align:center; background:#1f3c5c; color:white; padding:20px; margin-top:40px; }
 
 /* Modal */
-.modal{
-display:none;
-position:fixed;
-z-index:1;
-left:0;
-top:0;
-width:100%;
-height:100%;
-background-color:rgba(0,0,0,0.5);
-}
-
-.modal-content{
-background:white;
-margin:8% auto;
-padding:30px;
-width:60%;
-border-radius:8px;
-max-height:80%;
-overflow-y:auto;
-position:relative;
-}
-
-/* Resume Modal Styling */
-.resume-modal{
-background: linear-gradient(180deg, #f0f4f8, #ffffff);
-border-radius:10px;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-}
-
-.resume-header{
-background:#1f3c5c;
-color:white;
-padding:20px;
-border-radius:10px 10px 0 0;
-text-align:center;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
-}
-
-.resume-header h3{
-margin:0;
-font-size:24px;
-}
-
-.resume-header p{
-margin:5px 0 0 0;
-font-size:16px;
-}
-
-.resume-body{
-padding:20px;
-line-height:1.6;
-color:#333;
-}
-
-.resume-body h4{
-color:#1f3c5c;
-margin-top:15px;
-margin-bottom:8px;
-}
-
-.resume-body ul{
-margin-left:20px;
-}
-
-.resume-body a{
-color:#355f8a;
-text-decoration:none;
-font-weight:bold;
-}
-
-.resume-body a:hover{
-text-decoration:underline;
-}
-
-.close{
-float:right;
-font-size:28px;
-cursor:pointer;
-}
-
-.exit-btn{
-position:absolute;
-top:20px;
-right:80px;
-background:#c0392b;
-}
+.modal{ display:none; position:fixed; z-index:1; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); }
+.modal-content{ background:white; margin:8% auto; padding:30px; width:60%; border-radius:8px; max-height:80%; overflow-y:auto; position:relative; }
+.resume-modal{ background: linear-gradient(180deg,#f0f4f8,#ffffff); border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.25); }
+.resume-header{ background:#1f3c5c; color:white; padding:20px; border-radius:10px 10px 0 0; text-align:center; }
+.resume-body{ padding:20px; line-height:1.6; color:#333; }
+.resume-body h4{ color:#1f3c5c; margin-top:15px; margin-bottom:8px; }
+.resume-body ul{ margin-left:20px; }
+.resume-body a{ color:#355f8a; text-decoration:none; font-weight:bold; }
+.resume-body a:hover{ text-decoration:underline; }
+.close{ float:right; font-size:28px; cursor:pointer; }
+.exit-btn{ position:absolute; top:20px; right:80px; background:#c0392b; }
 
 /* Welcome Overlay */
-.welcome-overlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:999;
-}
+.welcome-overlay{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; z-index:999; }
+.welcome-content{ background: linear-gradient(135deg,#1f3c5c,#355f8a); padding:50px 30px; border-radius:12px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.3); color:white; }
+.welcome-content h2{ margin-bottom:15px; font-size:32px; font-family:'Montserrat',sans-serif; }
+.welcome-content p{ margin-bottom:20px; font-size:18px; color:#f0f0f0; }
 
-.welcome-content{
-background:white;
-padding:40px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-}
-
-.welcome-content h2{
-margin-bottom:15px;
-color:#1f3c5c;
-}
-
-.welcome-content p{
-margin-bottom:20px;
-font-size:16px;
-color:#333;
+/* Responsive */
+@media (max-width:768px){
+  .about-container{ flex-direction:column; align-items:center; }
+  .profile-pic{ width:150px; height:150px; }
+  .modal-content{ width:90%; margin:15% auto; }
+  nav a{ display:block; margin:10px 0; }
+  section{ padding:40px 5%; }
 }
