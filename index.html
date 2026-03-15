@@ -5,175 +5,128 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Benjamin Cayton | Hospitality Portfolio</title>
 <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- Welcome Overlay -->
 <div id="welcomeOverlay" class="welcome-overlay">
-<div class="welcome-content">
-<h2>Welcome to my page!</h2>
-<p>Click the button below to continue.</p>
-<button class="button" onclick="closeWelcome()">Continue</button>
-</div>
+  <div class="welcome-content">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Click below to enter and explore my professional work.</p>
+    <button class="button" onclick="closeWelcome()">Enter</button>
+  </div>
 </div>
 
 <header>
-<h1>Benjamin Cayton III</h1>
-<p>Hospitality & Tourism Management Student</p>
-
-<nav>
-<a href="#about">About</a>
-<a href="#resume">Resume</a>
-<a href="#projects">Projects</a>
-<a href="#case">Case Study</a>
-<a href="#recommendations">Recommendations</a>
-<a href="#contact">Contact</a>
-</nav>
+  <h1>Benjamin Cayton III</h1>
+  <p>Hospitality & Tourism Management Student</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#case">Case Study</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <!-- About Section -->
 <section id="about">
-<div class="about-container">
-
-<img src="assets/profile.jpg" alt="Benjamin Cayton" class="profile-pic">
-
-<div class="about-text">
-<h2>Elevator Pitch</h2>
-
-<p>
-Hello! My name is Benjamin Cayton III and I am currently studying Hospitality and Tourism Management at Brigham Young University–Hawaii. I am passionate about the hospitality industry and enjoy creating meaningful guest experiences.
-</p>
-
-<p>
-My goal is to build a career with Marriott International where I can contribute to exceptional guest service while continuing to grow professionally.
-</p>
-
-<a class="button" href="https://www.linkedin.com/in/benjamin-cayton-iii-5a3a3623a" target="_blank">Visit My LinkedIn</a>
-</div>
-
-</div>
+  <div class="about-container">
+    <img src="assets/profile.jpg" alt="Benjamin Cayton" class="profile-pic">
+    <div class="about-text">
+      <h2>Elevator Pitch</h2>
+      <p>Hello! My name is Benjamin Cayton III, studying Hospitality & Tourism Management at BYU–Hawaii. I am passionate about providing memorable guest experiences.</p>
+      <p>My goal is to contribute to exceptional guest service with Marriott International while growing professionally.</p>
+      <a class="button" href="https://www.linkedin.com/in/benjamin-cayton-iii-5a3a3623a" target="_blank">Visit My LinkedIn</a>
+    </div>
+  </div>
 </section>
 
 <!-- Resume Section -->
 <section id="resume">
-<h2>My Resume</h2>
-<p>Click the button below to view my professional resume.</p>
+  <h2>My Resume</h2>
+  <p>Click the button below to view my professional resume.</p>
+  <button class="button" onclick="openResume()">View Resume</button>
 
-<button class="button" onclick="openResume()">View Resume</button>
-
-<div id="resumeModal" class="modal">
-<div class="modal-content resume-modal">
-
-<!-- Close Buttons -->
-<span class="close" onclick="closeResume()">&times;</span>
-<button class="button exit-btn" onclick="closeResume()">Exit</button>
-
-<div class="resume-header">
-<h3>Benjamin Martinez Cayton III</h3>
-<p>Hospitality & Tourism Management Student</p>
-</div>
-
-<div class="resume-body">
-<p><strong>Email:</strong> bmcayton10@gmail.com</p>
-<p><strong>Phone:</strong> 808-743-0804</p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/benjamin-cayton-iii-5a3a3623a" target="_blank">View Profile</a></p>
-
-<h4>Career Objective</h4>
-<p>
-I am passionate about the hospitality industry and eager to gain hands-on experience through an internship with Marriott International. I enjoy engaging with guests and providing exceptional service while creating memorable experiences.
-</p>
-
-<h4>Skills</h4>
-<ul>
-<li>Data analysis and report generation using Excel</li>
-<li>Professional presentations using PowerPoint</li>
-<li>Strong written and verbal communication</li>
-<li>Team leadership and staff collaboration</li>
-</ul>
-
-<h4>Work Experience</h4>
-<p><strong>Gateway Buffet – Food Service</strong> (2024–Present)</p>
-<ul>
-<li>Assist 700–900 guests daily by providing excellent customer service</li>
-<li>Collaborate with staff to maintain efficient service during busy shifts</li>
-</ul>
-
-<p><strong>Everise Philippines – Customer Service Representative</strong> (2023–2024)</p>
-<ul>
-<li>Handled 50–100 calls per day addressing customer concerns</li>
-</ul>
-
-<p><strong>Pag-Asa ng Masang Pinoy Microfinance</strong> (2020–2022)</p>
-<ul>
-<li>Managed 50–70 accounts and conducted payment follow-ups</li>
-</ul>
-
-<h4>Education</h4>
-<p>
-BS Hospitality and Tourism Management<br>
-Brigham Young University–Hawaii
-</p>
-
-</div> <!-- resume-body -->
-
-</div>
-</div>
+  <div id="resumeModal" class="modal">
+    <div class="modal-content resume-modal">
+      <span class="close" onclick="closeResume()">&times;</span>
+      <button class="button exit-btn" onclick="closeResume()">Exit</button>
+      <div class="resume-header">
+        <h3>Benjamin Martinez Cayton III</h3>
+        <p>Hospitality & Tourism Management Student</p>
+      </div>
+      <div class="resume-body">
+        <p><strong>Email:</strong> bmcayton10@gmail.com</p>
+        <p><strong>Phone:</strong> 808-743-0804</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/benjamin-cayton-iii-5a3a3623a" target="_blank">View Profile</a></p>
+        <h4>Career Objective</h4>
+        <p>I am passionate about the hospitality industry and eager to gain hands-on experience through an internship with Marriott International. I enjoy engaging with guests and providing exceptional service while creating memorable experiences.</p>
+        <h4>Skills</h4>
+        <ul>
+          <li>Data analysis and report generation using Excel</li>
+          <li>Professional presentations using PowerPoint</li>
+          <li>Strong written and verbal communication</li>
+          <li>Team leadership and collaboration</li>
+        </ul>
+        <h4>Work Experience</h4>
+        <p><strong>Gateway Buffet – Food Service</strong> (2024–Present)</p>
+        <ul>
+          <li>Assist 700–900 guests daily</li>
+          <li>Collaborate with staff for efficient service during peak hours</li>
+        </ul>
+        <p><strong>Everise Philippines – Customer Service Representative</strong> (2023–2024)</p>
+        <ul>
+          <li>Handled 50–100 calls per day addressing customer concerns</li>
+        </ul>
+        <p><strong>Pag-Asa ng Masang Pinoy Microfinance</strong> (2020–2022)</p>
+        <ul>
+          <li>Managed 50–70 accounts and conducted follow-ups</li>
+        </ul>
+        <h4>Education</h4>
+        <p>BS Hospitality and Tourism Management<br>Brigham Young University–Hawaii</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects">
 <h2>Examples of My Work</h2>
-
 <div class="card">
 <h3>Starbucks Customer Experience Study</h3>
-<p>
-Conducted research analyzing the customer experience across Starbucks service channels including website interaction, online chat, and in-store service. Presented findings and recommendations for improving digital and in-person guest satisfaction.
-</p>
+<p>Analyzed customer experience across Starbucks service channels and presented recommendations for improvement.</p>
 </div>
-
 <div class="card">
 <h3>Hospitality Presentation Project</h3>
-<p>
-Created a professional PowerPoint presentation analyzing service strategies used by successful hospitality brands and explaining how these strategies improve customer satisfaction and brand loyalty.
-</p>
+<p>Created professional presentation analyzing service strategies and customer satisfaction improvement methods.</p>
 </div>
-
 <div class="card">
 <h3>Social Media Marketing Analysis</h3>
-<p>
-Analyzed marketing strategies for a hospitality brand, comparing traditional and digital campaigns. Provided insights and recommendations to enhance audience engagement and brand visibility.
-</p>
+<p>Analyzed traditional and digital campaigns for a hospitality brand and provided actionable insights.</p>
 </div>
-
 </section>
 
 <!-- Case Study -->
 <section id="case">
 <h2>Case Study</h2>
-
-<p><strong>Problem:</strong> Restaurants and hospitality businesses often struggle to maintain high customer satisfaction when guest volume is extremely high.</p>
-
-<p><strong>Solution:</strong> While working at Gateway Buffet, I collaborated with servers and kitchen staff to manage service flow during busy hours. We improved communication between staff members and ensured guests received timely assistance.</p>
-
-<p><strong>Result:</strong> Guests experienced smoother service and shorter waiting times, improving overall satisfaction and maintaining positive guest experiences.</p>
+<p><strong>Problem:</strong> Maintaining high customer satisfaction during peak hours.</p>
+<p><strong>Solution:</strong> Coordinated staff communication at Gateway Buffet to streamline service flow.</p>
+<p><strong>Result:</strong> Smoother guest service and shorter wait times, improving overall satisfaction.</p>
 </section>
 
 <!-- Recommendations -->
 <section id="recommendations">
 <h2>Recommendations</h2>
-
 <div class="card">
-<p>
-"Benjamin consistently demonstrates professionalism and a strong commitment to excellent guest service. He works well with others and contributes positively to the team environment."
-</p>
+<p>"Benjamin consistently demonstrates professionalism and a strong commitment to excellent guest service. He works well with others and contributes positively to the team environment."</p>
 <p><strong>– Hospitality Supervisor</strong></p>
 </div>
-
 <div class="card">
-<p>
-"Benjamin is hardworking, dependable, and eager to learn. His ability to communicate with guests and coworkers makes him a valuable asset in any hospitality environment."
-</p>
+<p>"Benjamin is hardworking, dependable, and eager to learn. His communication skills make him a valuable asset in any hospitality environment."</p>
 <p><strong>– Workplace Manager</strong></p>
 </div>
 </section>
@@ -192,17 +145,10 @@ Analyzed marketing strategies for a hospitality brand, comparing traditional and
 
 <script>
 // Resume modal
-function openResume() {
-document.getElementById("resumeModal").style.display = "block";
-}
-function closeResume() {
-document.getElementById("resumeModal").style.display = "none";
-}
-
+function openResume() { document.getElementById("resumeModal").style.display = "block"; }
+function closeResume() { document.getElementById("resumeModal").style.display = "none"; }
 // Welcome overlay
-function closeWelcome() {
-document.getElementById("welcomeOverlay").style.display = "none";
-}
+function closeWelcome() { document.getElementById("welcomeOverlay").style.display = "none"; }
 </script>
 
 </body>
