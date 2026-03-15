@@ -9,6 +9,15 @@
 
 <body>
 
+<!-- Welcome Overlay -->
+<div id="welcomeOverlay" class="welcome-overlay">
+<div class="welcome-content">
+<h2>Welcome to my page!</h2>
+<p>Click the button below to continue.</p>
+<button class="button" onclick="closeWelcome()">Continue</button>
+</div>
+</div>
+
 <header>
 <h1>Benjamin Cayton III</h1>
 <p>Hospitality & Tourism Management Student</p>
@@ -127,6 +136,14 @@ Conducted research analyzing the customer experience across Starbucks service ch
 Created a professional PowerPoint presentation analyzing service strategies used by successful hospitality brands and explaining how these strategies improve customer satisfaction and brand loyalty.
 </p>
 </div>
+
+<div class="card">
+<h3>Social Media Marketing Analysis</h3>
+<p>
+Analyzed marketing strategies for a hospitality brand, comparing traditional and digital campaigns. Provided insights and recommendations to enhance audience engagement and brand visibility.
+</p>
+</div>
+
 </section>
 
 <!-- Case Study -->
@@ -172,11 +189,17 @@ Created a professional PowerPoint presentation analyzing service strategies used
 </footer>
 
 <script>
+// Resume modal
 function openResume() {
 document.getElementById("resumeModal").style.display = "block";
 }
 function closeResume() {
 document.getElementById("resumeModal").style.display = "none";
+}
+
+// Welcome overlay
+function closeWelcome() {
+document.getElementById("welcomeOverlay").style.display = "none";
 }
 </script>
 
