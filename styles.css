@@ -118,6 +118,7 @@ width:60%;
 border-radius:8px;
 max-height:80%;
 overflow-y:auto;
+position:relative;
 }
 
 /* Resume Modal Styling */
@@ -176,6 +177,13 @@ text-decoration:underline;
 float:right;
 font-size:28px;
 cursor:pointer;
+}
+
+.exit-btn{
+position:absolute;
+top:20px;
+right:80px;
+background:#c0392b;
 }
 
 /* Welcome Overlay */
